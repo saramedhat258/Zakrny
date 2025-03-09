@@ -1,0 +1,378 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: beige;
+    padding-top: 60px;
+    background-image: url(../images/arabesque.png);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.special-heading+p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+}
+
+/*end global rules*/
+
+/*start header*/
+.header {
+    padding: 10px 40px;
+    padding-bottom: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: beige;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+header .container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    order: 2;
+}
+
+.header .logo {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    order: 2;
+    margin-right: 40px;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 250px;
+    text-align: right;
+    direction: rtl;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    order: 1;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 10px 20px;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: rgb(72, 72, 72);
+}
+
+header nav ul li.home {
+    order: 2;
+}
+
+header nav ul li.services {
+    order: 1;
+}
+
+@media (max-width: 670px) {
+    .logo-search {
+        gap: 0;
+    }
+
+    .search-bar input {
+        width: unset;
+    }
+
+    header nav ul li a {
+        padding: 10px 4px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header .container {
+        flex-direction: column-reverse;
+    }
+
+    .logo-search input {
+        width: 150px;
+    }
+
+    .logo-search img {
+        margin-left: 10px;
+        margin-right: 0;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+/*end header*/
+
+/*start landing*/
+.landing {
+    background-image: url(../images/bg.jpeg);
+    opacity: 92%;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.landing .img {
+    width: 100%;
+    height: auto;
+}
+
+.landing .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 100px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: beige
+}
+
+/*end landing*/
+
+/* start quran */
+.card {
+    direction: rtl;
+    background-color: #ffffffb6;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px #00000053;
+    margin: 20px;
+}
+
+@media (max-width: 430px) {
+    .card {
+        padding: 10px
+    }
+}
+
+.content {
+    padding: 20px;
+}
+
+
+select {
+    padding: 10px 15px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    background-color: beige;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+/* @media (max-width: 400px) {
+    select {
+        width: 100%;
+    }
+} */
+
+select:hover {
+    transform: translateY(-3px);
+}
+
+/* end quran*/
+
+/* start audio */
+.audio {
+    display: inline-block;
+    width: 300px;
+}
+
+.audio audio {
+    padding: 5px;
+    margin-bottom: -22px;
+    width: 100%;
+}
+
+@media (max-width: 680px) {
+    select, .audio {
+        width: 85%;
+        margin: 15px auto;
+        display: block;
+    }
+
+}
+
+
+/* end audio */
+
+/* Start verse */
+.ayat {
+    padding: 20px;
+    margin: 30px auto 0;
+    color: #111;
+    text-align: center;
+    box-shadow: 0 2px 5px #00000053;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ayat .basmala {
+    font-family: 'Amiri', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--sharp-text);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.ayat p {
+    display: inline-block;
+    line-height: 2;
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: 'Scheherazade', serif;
+}
+
+/* end verse */
+/*start footer*/
+.footer p {
+    color: #777;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: beige;
+}
+
+/*end footer*/
