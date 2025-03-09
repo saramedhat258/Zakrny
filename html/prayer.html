@@ -31,8 +31,8 @@
             </div>
             <nav>
                 <ul>
-                    <li  class="home"><a href="#home">الصفحة الرئيسة</a></li>
-                    <li  class="services"><a href="#services">خدمات ذكرني</a></li>
+                    <li  class="home"><a href="index.html">الصفحة الرئيسة</a></li>
+                    <li  class="services"><a href="index.html">خدمات ذكرني</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,43 +43,17 @@
     <div class="prayer">
         <div class="container">
             <form class="searchform" method="get" action="">
-                <input type="text" name="q" id="q" placeholder="اسم الدوله  ..." >
-                <input type="text" name="q" id="q" placeholder="اسم المدينة ..." >
-                <button type="button" class="location">
-                    <img src="../images/location.svg" title="جد مكاني !">
-                </button>
-                <button type="submit" class="search" >بحث !</button>
+                <input type="text" name="q" id="country" placeholder="اسم الدوله  ..." >
+                <input type="text" name="q" id="city" placeholder="اسم المدينة ..." >  
+                <button type="submit" class="search" >بحث</button>
             </form>
-            <div class="day">
-                <p>اليوم  <i class="fa-solid fa-calendar-days"></i></p>
-                <div class="hijri-date"> 9 رمضان 1446</div>
-                <div class="gre-date">9 مارس  2025</div>
+            <div id="daycontainer">
+                
             </div>
             <h2>مواقيت الصلاه </h2>
             <div class="prayer-time">
-                <div class="pry-time">
-                    <div class="name">الفجر</div>
-                    <div class="time">4:45 ص</div>
-                </div>
-                <div class="pry-time">
-                    <div class="name">الشروق</div>
-                    <div class="time">6:12 ص</div>
-                </div>
-                <div class="pry-time">
-                    <div class="name">الظهر</div>
-                    <div class="time">12:06 م</div>
-                </div>
-                <div class="pry-time">
-                    <div class="name">العصر</div>
-                    <div class="time">3:27 م</div>
-                </div>
-                <div class="pry-time">
-                    <div class="name">المغرب</div>
-                    <div class="time"> 5:59 م</div>
-                </div>
-                <div class="pry-time">
-                    <div class="name">العشاء</div>
-                    <div class="time">7:17 م</div>
+                <div class="beforefetch">
+                    ادخل دولتك ومدينتك لمعرفة مواعيد الصلاة
                 </div>
             </div>
         </div>
@@ -90,5 +64,6 @@
     <div class="footer">
         <p>Created by Marwa El-Azzazi &bull; Menna Rashed &bull; Sara Medhat</p>
     </div>
+    <script src="/js//prayer.js"></script>
 </body>
 </html>

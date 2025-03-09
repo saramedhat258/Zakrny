@@ -187,11 +187,11 @@
 .landing .intro-text h1{
   margin:0;
   font-weight:boldest;
-  font-size:50px;
+  font-size:55px;
   color:beige
 }
 .landing .intro-text p{
-  font-size:19px;
+  font-size:35px;
   line-height:1.8;
   color:#cfcfcb;
   display: block;
@@ -221,6 +221,11 @@
   direction:rtl;
   transition: transform 0.3s ease,box-shadow 0.3s ease;
   background-color: rgb(238, 238, 209);
+  color: black;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
 }
 .features .feat:hover{
   transform:scale(1.05);

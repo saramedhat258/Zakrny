@@ -263,11 +263,12 @@ header nav ul li.services {
 /* start quran */
 .card {
     direction: rtl;
-    background-color: #ffffffb6;
+    background-color: #ffffffc1 ;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 6px 15px #00000053;
-    margin: 20px;
+    width: 85%;
+    margin:20px auto;
 }
 
 @media (max-width: 430px) {

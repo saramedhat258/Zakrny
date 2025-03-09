@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Cairo", sans-serif;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
 }
 
 body {
-    font-family: "Cairo", sans-serif;
     background-color: beige;
     padding-top: 60px;
 }
@@ -235,14 +235,14 @@ header nav ul li.services {
 }
 
 .prayer .container .searchform {
-    margin: 10px;
-    text-align: center;
+    margin: 20px 10px 30px;
+    
 }
 
 .prayer .container .searchform input[type="text"] {
     padding: 10px;
     outline: none;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid gold;
     width: 200px;
     margin: 10px;
@@ -265,29 +265,24 @@ header nav ul li.services {
 }
 
 .prayer .container .searchform button {
-    background: none;
+    background: beige;
+    border-radius: 20px;
+    padding: 10px 20px;
     border: none;
-    color: beige;
-}
-
-.prayer .container .searchform button img {
-    vertical-align: middle;
-    padding: 10px;
-}
-
-.prayer .container .searchform button[type="submit"] {
-    border: 1px solid beige;
-    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .prayer .container .day {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 130px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.193);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,10 +301,17 @@ header nav ul li.services {
     text-align: center;
 }
 
+.prayer-time .beforefetch{
+    font-size: 30px;
+    width: 50%;
+    margin:70px auto;
+}
+
 .prayer .container .prayer-time {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-height: 270px;
 }
 
 .prayer .container .prayer-time .pry-time {
@@ -317,12 +319,12 @@ header nav ul li.services {
     border: 2px solid beige;
     width: calc(90% /6);
     height: 150px;
-    padding: 10px;
-    margin: 40px 0;
+    padding: 15px;
+    margin: 40px 0 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     border-radius: 5px;
     -webkit-border-radius: 5px;
