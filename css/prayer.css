@@ -167,6 +167,38 @@ header nav ul li.services {
     order: 1;
 }
 
+@media (max-width: 670px) {
+    .logo-search {
+        gap: 0;
+    }
+
+    .search-bar input {
+        width: unset;
+    }
+
+    header nav ul li a {
+        padding: 10px 4px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header .container {
+        flex-direction: column-reverse;
+    }
+
+    .logo-search input {
+        width: 150px;
+    }
+
+    .logo-search img {
+        margin-left: 10px;
+        margin-right: 0;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
 /*end header*/
 
 /*start landing*/
@@ -192,7 +224,11 @@ header nav ul li.services {
     z-index: 1;
 }
 
-.prayer .container {
+@media (max-width: 440px)  {
+    .prayer {
+        margin-top: 40px;
+    }
+}.prayer .container {
     position: relative;
     z-index: 20;
     padding: 40px;
@@ -200,14 +236,32 @@ header nav ul li.services {
 
 .prayer .container .searchform {
     margin: 10px;
+    text-align: center;
 }
 
-.prayer .container .searchform input[type="search"] {
+.prayer .container .searchform input[type="text"] {
     padding: 10px;
     outline: none;
     border-radius: 5px;
     border: 1px solid gold;
-    width: 300px;
+    width: 200px;
+    margin: 10px;
+}
+
+@media (max-width: 560px) {
+    .prayer .container .searchform {
+        text-align: right;
+    }
+}
+
+@media (max-width: 370px) {
+    .prayer .container .searchform {
+        text-align: center;
+    }
+
+    .prayer .container .searchform input[type="text"] {
+        width: 100%;
+    }
 }
 
 .prayer .container .searchform button {

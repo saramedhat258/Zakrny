@@ -1,10 +1,10 @@
 /*start global rules*/
 * {
-    padding: 0;
-    margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -14,6 +14,8 @@ html {
 body {
     font-family: "Cairo", sans-serif;
     background-color: beige;
+    padding-top: 60px;
+    background-image: url(../images/arabesque.png);
 }
 
 .container {
@@ -70,10 +72,9 @@ body {
 
 /*start header*/
 .header {
-    overflow: hidden;
     padding: 10px 40px;
     padding-bottom: 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     background-color: beige;
@@ -168,6 +169,38 @@ header nav ul li.services {
     order: 1;
 }
 
+@media (max-width: 670px) {
+    .logo-search {
+        gap: 0;
+    }
+
+    .search-bar input {
+        width: unset;
+    }
+
+    header nav ul li a {
+        padding: 10px 4px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header .container {
+        flex-direction: column-reverse;
+    }
+
+    .logo-search input {
+        width: 150px;
+    }
+
+    .logo-search img {
+        margin-left: 10px;
+        margin-right: 0;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
 /*end header*/
 
 /*start landing*/
@@ -220,74 +253,126 @@ header nav ul li.services {
 
 .landing .intro-text h1 {
     margin: 0;
-    font-weight: boldest;
+    font-weight: bold;
     font-size: 50px;
     color: beige
 }
 
 /*end landing*/
+
 /* start quran */
-.quran {
-    margin: 20px 0;
-    padding: 20px;
+.card {
     direction: rtl;
+    background-color: #ffffffb6;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px #00000053;
+    margin: 20px;
 }
 
-.quran form {
-    width: fit-content;
-    padding: 40px 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 2px #123;
-    margin: 40px auto;
-    line-height: 2.5;
+@media (max-width: 430px) {
+    .card {
+        padding: 10px
+    }
 }
 
-.quran form select {
-    width: 350px;
-    border-radius: 10px;
-    padding: 5px 10px;
+.content {
+    padding: 20px;
+}
+
+
+select {
+    padding: 10px 15px;
+    width: 200px;
     border: none;
-    background: beige;
-    box-shadow: 1px 1px 3px #123;
-    margin: 0 10px;
+    border-radius: 8px;
+    background-color: beige;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
 }
 
-.quran form input {
-    width: 150px;
-    border: 1px solid #123;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: beige;
-    transition: .3s;
-}
-
-.quran form input:hover {
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-}
-
-@media (max-width: 950px) {
-    .quran form {
-        width: 80%;
+/* @media (max-width: 400px) {
+    select {
+        width: 100%;
     }
-    .quran form select, .quran form input {
+} */
+
+select:hover {
+    transform: translateY(-3px);
+}
+
+/* end quran*/
+
+/* start audio */
+.audio {
+    display: inline-block;
+    width: 300px;
+}
+
+.audio audio {
+    padding: 5px;
+    margin-bottom: -22px;
+    width: 100%;
+}
+
+@media (max-width: 680px) {
+    select, .audio {
+        width: 85%;
+        margin: 15px auto;
         display: block;
-        margin: 25px auto 0;
-        width: 90%;
     }
+
 }
 
 
-/* end quran  */
+/* end audio */
+
+/* Start verse */
+.ayat {
+    padding: 20px;
+    margin: 30px auto 0;
+    color: #111;
+    text-align: center;
+    box-shadow: 0 2px 5px #00000053;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ayat .basmala {
+    font-family: 'Amiri', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--sharp-text);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.ayat p {
+    display: inline-block;
+    line-height: 2;
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: 'Scheherazade', serif;
+}
+
+/* end verse */
 /*start footer*/
 .footer p {
     color: #777;
-    padding: 30px 10px;
+    padding: 15px 10px;
     text-align: center;
     font-size: 18px;
+    background-color: beige;
 }
 
 /*end footer*/
