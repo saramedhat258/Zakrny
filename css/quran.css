@@ -367,13 +367,3 @@ select:hover {
 }
 
 /* end verse */
-/*start footer*/
-.footer p {
-    color: #777;
-    padding: 15px 10px;
-    text-align: center;
-    font-size: 18px;
-    background-color: beige;
-}
-
-/*end footer*/
