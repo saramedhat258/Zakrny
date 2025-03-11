@@ -1,3 +1,44 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*start header*/
 .header {
     padding: 10px 40px;
     padding-bottom: 0;
@@ -134,4 +175,7 @@ header nav ul li.services {
     padding: 15px 10px;
     text-align: center;
     font-size: 18px;
+}
+.footer{
+    background-color: beige;
 }
