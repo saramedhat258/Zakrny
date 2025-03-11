@@ -46,12 +46,8 @@
     <!-- start quran  -->
     <div id="quran" class="card" >
         <div class="content">
-            <p>اختر السورة لعرضها:</p>
+            <p class="selectostart">اختر السورة لعرضها:</p>
             <select class="verse-name">
-                <option>الفاتحة</option>
-                <option>البقرة</option>
-                <option>آل عمران</option>
-                <option>النساء</option>
             </select>
             <div class="audio">
                 <audio controls muted>
@@ -60,10 +56,9 @@
                     Your browser doesn't support the audio element
                 </audio>
             </div>
-            <!-- start ayat -->
-            <div class="ayat">
-                <div class="basmala">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ</div>
-                <p> الحمد لله رب العالمين {<span></span>}</p>
+            <!-- start surah -->
+            <div class="surah">
+                <div class="beforefetch">اختر السورة ليتسنى لك قراءتها والاستماع اليها</div>
             </div>
         </div>
     </div>
@@ -72,5 +67,6 @@
     <div class="footer">
         <p>Created by Marwa El-Azzazi &bull; Menna Rashed &bull; Sara Medhat</p>
     </div>
+    <script src="../js/Quran.js"></script>
 </body>
 </html>
