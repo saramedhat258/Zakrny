@@ -153,9 +153,7 @@ header nav ul li.services {
 }
 
 @media (max-width: 440px) {
-    .header .container {
-        flex-direction: column-reverse;
-    }
+
 
     .logo-search input {
         width: 150px;
@@ -163,12 +161,58 @@ header nav ul li.services {
 
     .logo-search img {
         margin-left: 10px;
-        margin-right: 0;
+        margin-right: 0 !important;
         width: 30px !important;
         height: 30px !important;
     }
+    .search-bar{
+        display: none !important;
+    }
 }
 /*end header*/
+
+/*responsive header*/
+.menu{
+    display: none;
+}
+.dropmenu {
+    width: 300px;
+    position: absolute;
+    right: 0.5rem;
+    top: 4rem;
+    background-color: rgba(245, 245, 220, 0.781);
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.dropmenu li {
+    padding: 5px 0;
+    list-style: none;
+}
+.dropmenu a{
+    color: black;
+    text-decoration: none;
+}
+.dropmenu ul{
+    text-align: center;
+    padding-left: 0;
+}
+.open{
+    width: 90%;
+}
+@media(max-width:900px) {
+    nav ul{
+        display: none !important;
+    }
+    .open,
+    .menu{
+        display: block !important;
+    }
+}
 /*footer*/
 .footer p {
     color: #777;

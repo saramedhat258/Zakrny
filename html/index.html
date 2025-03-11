@@ -36,7 +36,20 @@
               <li class="home"><a href="index.html">الصفحة الرئيسة</a></li>
               <li class="services"><a href="#services">خدمات ذكرني</a></li>
             </ul>
+              <img src='../images/icon-hamburger.svg' alt="" class="menu">
           </nav>
+          <!-- responsive header -->
+          <div class="dropmenu">
+            <ul class="text-center">
+                <a href="index.html">
+                    <li>الصفحه الرئيسة</li>
+                </a>
+                <a href="#services">
+                    <li>خدمات ذكرني</li>
+                </a>
+            </ul>
+          </div>
+
         </div>
       </div>
     </header>
@@ -89,5 +102,12 @@
     <div class="footer">
         <p>Created by Marwa El-Azzazi &bull; Menna Rashed &bull; Sara Medhat</p>
     </div>
+    <script>
+      const togglebtn=document.querySelector(".menu")
+            const dropmenu=document.querySelector(".dropmenu")
+            togglebtn.onclick=()=>{
+                dropmenu.classList.toggle("open")
+            }
+    </script>
 </body>
 </html>

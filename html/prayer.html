@@ -21,24 +21,42 @@
 </head>
 <body>
     <!--start Header -->
-<header>
-    <div class="header">
+    <header>
+        <div class="header">
         <div class="container">
             <div class="logo-search">
-                <img decoding="async" class="logo" src="../images/logo.png" alt="">
-                <form class="search-bar">
-                    <input type="text" placeholder="ابحث">
-                </form>
+            <img
+                decoding="async"
+                class="logo"
+                src="../images/logo.png"
+                alt=""
+            />
+            <form class="search-bar">
+                <input type="text" placeholder="ابحث" />
+            </form>
             </div>
             <nav>
-                <ul>
-                    <li  class="home"><a href="index.html">الصفحة الرئيسة</a></li>
-                    <li  class="services"><a href="index.html">خدمات ذكرني</a></li>
-                </ul>
+            <ul>
+                <li class="home"><a href="index.html">الصفحة الرئيسة</a></li>
+                <li class="services"><a href="#services">خدمات ذكرني</a></li>
+            </ul>
+                <img src='../images/icon-hamburger.svg' alt="" class="menu">
             </nav>
+            <!-- responsive header -->
+            <div class="dropmenu">
+            <ul class="text-center">
+                <a href="index.html">
+                    <li>الصفحه الرئيسة</li>
+                </a>
+                <a href="index.html">
+                    <li>خدمات ذكرني</li>
+                </a>
+            </ul>
+            </div>
+
         </div>
-    </div>  
-</header>
+        </div>
+    </header>
     <!--end Header -->
     <!--start prayer -->
     <div class="prayer">
@@ -66,5 +84,12 @@
         <p>Created by Marwa El-Azzazi &bull; Menna Rashed &bull; Sara Medhat</p>
     </div>
     <script src="/js//prayer.js"></script>
+    <script>
+        const togglebtn=document.querySelector(".menu")
+            const dropmenu=document.querySelector(".dropmenu")
+            togglebtn.onclick=()=>{
+                dropmenu.classList.toggle("open")
+            }
+    </script>
 </body>
 </html>
