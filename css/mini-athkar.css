@@ -1,6 +1,6 @@
 /*start global rules*/
 
-  body {
+body {
     font-family: "Cairo", sans-serif;
     background-color: beige;
     padding-top:60px;
@@ -26,10 +26,10 @@
     }
   }
   /*end global rules*/
-
+/*start header*/
 /*start landing*/
 .landing{
-    background-image: url(../images/athkar.jpg);
+
     opacity:92%;
     background-position: center;
     background-size: cover;
@@ -71,10 +71,11 @@
     margin:0;
     font-weight:boldest;
     font-size:50px;
-    color:beige
+    color:beige;
+    direction: rtl;
   }
   /*end landing*/
-  /*start features*/
+   /*start features*/
   .features{
     padding:120px 0;
     background-image: url(../images/arabesque.png);
@@ -99,7 +100,23 @@
     background-color: rgb(238, 238, 209);
     color: black;
     text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
   }
+  .counter{
+    background: none;
+    border: 2px solid black;
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:14px;
+    white-space: nowrap;
+  }
+
+  /*start divider*/
+  /*end divider*/
+  
   a{
     text-decoration: none;
   }
@@ -116,6 +133,7 @@
     line-height:1.8;
     color:#777;
     font-size:17px;
+    direction: rtl;
   }
   .features .feat img{
     width:100px;
@@ -124,4 +142,3 @@
     margin-bottom:20px;
   }
   /*end features*/
-  

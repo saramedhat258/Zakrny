@@ -200,3 +200,12 @@ body {
 }
 
 /*end prayer*/
+/*start footer*/
+.footer{
+position:fixed;
+bottom:0;
+width:100%;
+background-color: #333;
+text-align: center;
+padding:10px;
+}
