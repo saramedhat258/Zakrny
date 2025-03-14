@@ -179,18 +179,19 @@ header nav ul li.services {
     width: 300px;
     position: absolute;
     top: 5rem;
-    background-color: rgba(245, 245, 220, 0.781);
+    background-color: rgba(199, 199, 156, 0.916);
+    border: 1px solid rgba(0, 0, 0, 0.884);
     padding: 10px 0;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display: none;
 }
 
 .dropmenu li {
-    padding: 5px 0;
+    padding: 10px 0;
     list-style: none;
+}
+.divider{
+    border: 1px solid rgba(0, 0, 0, 0.544);
 }
 .dropmenu a{
     color: black;
