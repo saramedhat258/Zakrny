@@ -46,8 +46,8 @@ function fetchPrayerTimes() {
             </div>
         `
             // عرض أوقات الصلاة
-            document.querySelector('.prayer-time').innerHTML = `
-                    ${prayers.map(p => `
+            document.querySelector('.prayer-time').innerHTML = `  
+                    ${prayers.map(p => `  
                         <div class="pry-time">
                             <div class="name">${p.name}</div>
                             <div class="time">${convertTo12HourFormat(p.time)}</div>
