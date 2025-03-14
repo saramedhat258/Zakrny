@@ -46,7 +46,7 @@ function fetchPrayerTimes() {
             </div>
         `
             // عرض أوقات الصلاة
-            document.querySelector('.prayer-time').innerHTML = `
+            document.querySelector('.prayer-time').innerHTML = ` 
                     ${prayers.map(p => `
                         <div class="pry-time">
                             <div class="name">${p.name}</div>
