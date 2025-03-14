@@ -1,12 +1,9 @@
 {
-  "homepage": "https://saramedha258.github.io/Zakrny",
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "json-server": "^1.0.0-beta.3"
   },
-  "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "gh-pages": "^6.3.0"
   }
-
 }
