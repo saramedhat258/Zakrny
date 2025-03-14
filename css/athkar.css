@@ -29,7 +29,7 @@
 
 /*start landing*/
 .landing{
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/athkar.jpg);
     opacity:92%;
     background-position: center;
     background-size: cover;
@@ -74,4 +74,54 @@
     color:beige
   }
   /*end landing*/
+  /*start features*/
+  .features{
+    padding:120px 0;
+    background-image: url(../images/arabesque.png);
+  }
+  .features .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:20px;
+    justify-content:center;
+    direction:rtl;
+  }
+  .features .feat{
+    padding:20px;
+    text-align:center;
+    border:solid black 2px;
+    border-radius:20px;
+    box-shadow: #797979 0px 0px 10px;
+    margin:10px;
+    text-align:center;
+    direction:rtl;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+    background-color: rgb(238, 238, 209);
+    color: black;
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .features .feat:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    background:rgb(246, 246, 231);
+  }
+  .features .feat h3{
+    font-weight:800;
+    margin:30px 0;
+  }
+  .features .feat p{
+    line-height:1.8;
+    color:#777;
+    font-size:17px;
+  }
+  .features .feat img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-bottom:20px;
+  }
+  /*end features*/
   

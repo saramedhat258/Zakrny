@@ -89,6 +89,7 @@
   color:#cfcfcb;
   display: block;
   margin: 40px 0;
+  direction: rtl;
 }
 /*end landing*/
 /*start features*/
