@@ -178,8 +178,7 @@ header nav ul li.services {
 .dropmenu {
     width: 300px;
     position: absolute;
-    right: 0.5rem;
-    top: 4rem;
+    top: 5rem;
     background-color: rgba(245, 245, 220, 0.781);
     padding: 10px 0;
     border-radius: 5px;

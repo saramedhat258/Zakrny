@@ -26,6 +26,9 @@ body {
     .special-heading {
         font-size: 60px;
     }
+    .beforefetch{
+        width: 70% !important;
+    }
 }
 
 /*end global rules*/
@@ -40,6 +43,7 @@ body {
     position: relative;
     direction: rtl;
     font-family: "Amiri", serif;
+    
 }
 
 .prayer::before {
@@ -50,14 +54,15 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.633);
-    z-index: 1;
+
 }
 
 @media (max-width: 440px)  {
     .prayer {
         margin-top: 40px;
     }
-}.prayer .container {
+}
+.prayer .container {
     position: relative;
     z-index: 20;
     padding: 40px;
@@ -134,13 +139,14 @@ body {
     font-size: 30px;
     width: 50%;
     margin:70px auto;
+    text-align: center;
 }
 
 .prayer .container .prayer-time {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 270px;
+    min-height: 280px;
 }
 
 .prayer .container .prayer-time .pry-time {
@@ -179,6 +185,9 @@ body {
 @media (max-width: 990px) {
     .prayer .container .prayer-time .pry-time {
         width: calc(90% /3);
+    }
+    .prayer{
+        margin:0 0 50px ;
     }
 }
 

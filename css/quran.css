@@ -190,6 +190,7 @@ audio::-webkit-media-controls-volume-slider {
 .surah {
     padding: 20px;
     margin: 30px auto 0;
+    text-align: center;
     color: #111;
     box-shadow: 0 2px 5px #331a1a;
     border-radius: 10px;
@@ -205,7 +206,6 @@ audio::-webkit-media-controls-volume-slider {
     font-size: 24px;
     font-weight: bold;
     color: var(--sharp-text);
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 2;
