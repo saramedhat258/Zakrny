@@ -20,7 +20,7 @@ function fetchPrayerTimes() {
         alert('الرجاء إدخال المدينة والدولة');
         return;
     }
-    fetch(`http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`)
+    fetch(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`)
         .then(response => response.json())
         .then(data => {
             const timings = data.data.timings;
