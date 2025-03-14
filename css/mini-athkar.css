@@ -1,0 +1,134 @@
+/*start global rules*/
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: beige;
+    padding-top:60px;
+  }
+
+  .special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  .special-heading + p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+  }
+  @media (max-width: 767px) {
+    .special-heading {
+      font-size: 60px;
+    }
+    .landing p{
+      width: 90% !important;
+    }
+  }
+  /*end global rules*/
+/*start header*/
+/*start landing*/
+  .landing p{
+    background-color: rgba(101, 77, 41, 0.807);
+    margin:auto;
+    padding: 15px;
+    width: 15%;
+    font-size: 35px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  /*end landing*/
+   /*start features*/
+  .features{
+    padding:80px 0;
+    background-image: url(../images/arabesque.png);
+  }
+  .features .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:20px;
+    justify-content:center;
+    direction:rtl;
+  }
+  .zekr,.zekr-desc{
+    padding:20px;
+    text-align:center;
+    border:solid black 2px;
+    border-radius:20px;
+    box-shadow: #797979 0px 0px 10px;
+    margin:10px 0 0;
+    text-align:center;
+    direction:rtl;
+    background-color: rgb(238, 238, 209);
+    color: black;
+    text-decoration: none;
+    display:flex;
+    justify-content: space-between;
+    
+  }
+  .zekr{
+    align-items: center;
+    gap:10px;
+  }
+  .zekr-desc{
+    flex-direction: column;
+  }
+  .zekr-desc button{
+    width: 100%;
+    background-color:rgba(101, 77, 41, 0.807) ;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 0;
+  }
+  .zekrcontent {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+  .counter{
+    background-color: rgba(101, 77, 41, 0.807);
+    padding:5px 10px;
+    border-radius:12px;
+    font-size:18px;
+    white-space: nowrap;
+    color: white
+  }
+
+  /*start divider*/
+  .divider{
+    margin: 8px;
+    border: 1px solid black;
+  }
+  /*end divider*/
+  
+  a{
+    text-decoration: none;
+  }
+  .features .zekr h3{
+    font-weight:800;
+    margin:30px 0;
+  }
+  .features .zekr p,.zekrcontent p ,.zekr-desc p{
+    line-height:1.8;
+    color:#777;
+    font-size:17px;
+    direction: rtl;
+  }
+  .desc{
+    color: rgb(101, 77, 41);
+    font-size: 15px;
+  }
+  .features .zekr img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-bottom:20px;
+  }
+  /*end features*/
