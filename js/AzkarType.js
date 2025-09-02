@@ -11,10 +11,13 @@ const azkarTitles = {
 };
 
 const fetchAzkar=(id)=>{
-    fetch(`https://glistening-humdrum-bottle.glitch.me/${id}`)
+    fetch(`https://68b6dffc73b3ec66cec2ffd6.mockapi.io/zakrny/all`)
     .then(res=>res.json())
     .then(data=>{
-        data.map(zekr=>{
+        const allData=data[0]
+        const zekrData=allData[id]
+        console.log(zekrData)
+        zekrData.map(zekr=>{
             const arabicTitle = azkarTitles[zekr.category]
             azkarTitle.innerHTML=arabicTitle
             let zekrstyle;
